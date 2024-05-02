@@ -1,4 +1,3 @@
-<script>
     //function calculatePercentage() {
     //    var totalSpace = parseFloat(document.getElementById('totalSpace').value);
     //    var usageSpace = parseFloat(document.getElementById('usageSpace').value);
@@ -36,4 +35,3 @@
         document.getElementById("usageSpace").value = '';
         document.getElementById("freePercentage").value = '';
     }
-</script>
