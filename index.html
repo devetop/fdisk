@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Disk Space Percentage Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Free Disk Space Percentage Calculator</h2>
+    <label for="totalSpace">Total Disk Space (GB):</label>
+    <input type="number" id="totalSpace" min="0">
+    <label for="usageSpace">Disk Usage (GB):</label>
+    <input type="number" id="usageSpace" min="0">
+    <label for="freePercentage">Free Disk Space Percentage (%):</label>
+    <input type="number" id="freePercentage" min="0">
+    <button onclick="calculatePercentage()">Calculate</button>
+    <button onclick="resetFields()">Reset</button>
+    <div id="result"></div>
+</div>
+
+<script src="https://fdisk.bisacloud.com/calculate.js"></script>
+</body>
+</html>
